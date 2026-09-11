@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guy Knafo — Project Manager</title>
+<meta name="description" content="Project manager and industrial designer. Defense and technology hardware, from requirements to serial production — and the software that runs it.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guy Knafo — Project Manager">
+<meta property="og:description" content="Defense and technology hardware, from requirements to serial production — and the software that runs it. 20 people managed, 20 projects on time.">
+<meta property="og:url" content="https://gk-ai-code.github.io/Guy-cv/">
+<meta property="og:image" content="https://gk-ai-code.github.io/Guy-cv/og-cover.png">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Guy Knafo — Project Manager">
+<meta name="twitter:description" content="Defense and technology hardware, from requirements to serial production — and the software that runs it.">
+<meta name="twitter:image" content="https://gk-ai-code.github.io/Guy-cv/og-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sheet:#FBFBF9;
+  --ink:#142A40;
+  --ink-soft:#55626E;
+  --rule:#CBD3DA;
+  --rule-strong:#9DA9B4;
+  --accent:#A9762F;
+  --redline:#8C3A1B;
+  --pass:#2E6B4F;
+  --maxw:74ch;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--sheet);
+  color:var(--ink);
+  font-family:'Heebo',-apple-system,Segoe UI,Arial,sans-serif;
+  font-weight:400;
+  font-size:17px;
+  line-height:1.62;
+  padding:clamp(10px,2.2vw,26px);
+}
+
+/* ---- drawing sheet frame ---- */
+.sheet{
+  max-width:960px;margin:0 auto;position:relative;
+  border:1px solid var(--rule-strong);
+  background:#fff;
+  padding:clamp(20px,4.4vw,56px);
+  padding-bottom:0;
+}
+.sheet::before{
+  content:"";position:absolute;inset:7px;
+  border:1px solid var(--rule);pointer-events:none;
+}
+.inner{position:relative;max-width:var(--maxw)}
+
+/* ---- language switch ---- */
+.lang{
+  position:absolute;top:0;inset-inline-end:0;
+  display:flex;border:1px solid var(--rule-strong);
+  font-size:12px;letter-spacing:.09em;z-index:5;
+}
+.lang button{
+  font:inherit;font-family:inherit;font-weight:500;
+  background:transparent;border:0;color:var(--ink-soft);
+  padding:6px 13px;cursor:pointer;letter-spacing:.09em;
+}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.lang button+button{border-inline-start:1px solid var(--rule-strong)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* ---- hero ---- */
+.hero{padding-block:8px 4px}
+h1{
+  font-weight:900;letter-spacing:-.022em;line-height:.97;
+  font-size:clamp(44px,9.2vw,86px);
+}
+.role{
+  margin-top:10px;font-weight:500;font-size:clamp(15px,2.3vw,19px);
+  color:var(--accent);letter-spacing:.005em;
+}
+
+/* the one bold moment: his record, dimensioned like a part */
+.dimwrap{margin:22px 0 6px}
+svg.dim{display:block;width:100%;height:46px;overflow:visible}
+svg.dim line,svg.dim path{stroke:var(--rule-strong);stroke-width:1;fill:none}
+svg.dim .span{stroke:var(--accent);stroke-width:1.3}
+svg.dim text{
+  font-family:'Heebo',Arial,sans-serif;font-size:12.5px;font-weight:500;
+  fill:var(--accent);letter-spacing:.04em;
+}
+@media(prefers-reduced-motion:no-preference){
+  .anim svg.dim .span,.anim svg.dim .tick{
+    stroke-dasharray:var(--len);stroke-dashoffset:var(--len);
+    animation:draw .85s cubic-bezier(.4,0,.15,1) .25s forwards;
+  }
+  .anim svg.dim text{opacity:0;animation:fade .5s ease .95s forwards}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+
+#dimlabel{
+  margin-top:-33px;margin-inline:auto;
+  display:table;background:#fff;padding:0 14px;
+  font-size:12.5px;font-weight:500;letter-spacing:.04em;
+  color:var(--accent);text-align:center;position:relative;
+}
+@media(prefers-reduced-motion:no-preference){
+  .anim #dimlabel{opacity:0;animation:fade .5s ease .95s forwards}
+}
+@media(max-width:520px){#dimlabel{font-size:11.5px;padding:0 8px}}
+
+.meta{
+  display:flex;flex-wrap:wrap;gap:6px 20px;
+  font-size:14.5px;color:var(--ink-soft);
+  padding-block:6px 4px;
+}
+.meta a{color:var(--ink-soft);text-decoration-color:var(--rule-strong);text-underline-offset:3px}
+.meta a:hover{color:var(--accent)}
+
+/* ---- sections ---- */
+section{padding-block:clamp(26px,4vw,40px) 0}
+h2{
+  font-size:13.5px;font-weight:700;letter-spacing:.14em;
+  color:var(--ink);padding-bottom:7px;margin-bottom:18px;
+  border-bottom:1.5px solid var(--accent);
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+}
+h2 .zone{font-weight:400;font-size:11px;letter-spacing:.1em;color:var(--ink-soft)}
+p.lede{font-size:17.5px;line-height:1.68}
+
+/* ---- inspection record (achievements) ---- */
+table.rec{width:100%;border-collapse:collapse;font-size:15.5px}
+table.rec th{
+  text-align:start;font-weight:500;font-size:11.5px;letter-spacing:.1em;
+  color:var(--ink-soft);border-bottom:1px solid var(--rule-strong);
+  padding:0 10px 7px 0;padding-inline:0 10px;
+}
+table.rec td{
+  padding:11px 10px 11px 0;padding-inline:0 10px;
+  border-bottom:1px solid var(--rule);vertical-align:baseline;
+}
+table.rec tr:last-child td{border-bottom:0}
+td.val{
+  font-weight:900;font-size:19px;color:var(--accent);
+  white-space:nowrap;width:1%;
+}
+td.what{font-weight:500}
+td.how{color:var(--ink-soft);font-size:14.5px;line-height:1.5}
+
+/* ---- experience ---- */
+.job{padding-bottom:20px}
+.job:last-child{padding-bottom:4px}
+.job h3{font-size:18px;font-weight:700;line-height:1.3}
+.job .at{
+  font-size:14.5px;color:var(--ink-soft);margin:2px 0 9px;
+}
+.job .at b{color:var(--accent);font-weight:500}
+ul{list-style:none}
+ul li{position:relative;padding-inline-start:17px;margin-bottom:6px}
+ul li::before{
+  content:"";position:absolute;inset-inline-start:0;top:.72em;
+  width:6px;height:1.5px;background:var(--accent);
+}
+
+/* ---- projects ---- */
+.proj{
+  padding:14px 0;border-top:1px solid var(--rule);
+}
+.proj:first-of-type{border-top:0;padding-top:2px}
+.proj h3{font-size:16.5px;font-weight:700}
+.proj p{font-size:15.5px;margin:3px 0 7px}
+.stack{font-size:12.5px;color:var(--ink-soft);letter-spacing:.03em}
+
+/* ---- education / service grid ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:620px){.two{grid-template-columns:1fr;gap:0}}
+.ed{margin-bottom:13px}
+.ed b{font-weight:700;font-size:15.5px}
+.ed span{display:block;font-size:14px;color:var(--ink-soft)}
+
+/* ---- title block (drawing convention) ---- */
+.titleblock{
+  margin-top:clamp(30px,5vw,46px);
+  margin-inline:calc(-1 * clamp(20px,4.4vw,56px));
+  border-top:1.5px solid var(--ink);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.titleblock div{
+  padding:11px clamp(10px,2vw,16px);
+  border-inline-end:1px solid var(--rule);
+  font-size:13px;
+}
+.titleblock div:last-child{border-inline-end:0}
+.titleblock dt{
+  font-size:10px;letter-spacing:.12em;color:var(--ink-soft);
+  font-weight:500;margin-bottom:2px;
+}
+.titleblock dd{font-weight:700;font-size:13.5px}
+.titleblock a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
+.titleblock a:hover{color:var(--accent)}
+@media(max-width:620px){
+  .titleblock{grid-template-columns:1fr 1fr}
+  .titleblock div:nth-child(2n){border-inline-end:0}
+  .titleblock div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+
+/* ---- download bar ---- */
+.dl{
+  display:flex;flex-wrap:wrap;gap:10px;
+  margin-top:20px;
+}
+.dl a{
+  font-size:13.5px;font-weight:500;letter-spacing:.03em;
+  color:var(--ink);text-decoration:none;
+  border:1px solid var(--rule-strong);
+  padding:8px 15px;
+}
+.dl a:hover{border-color:var(--accent);color:var(--accent)}
+.dl a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---- print: give recruiters a clean sheet on Ctrl+P ---- */
+@media print{
+  body{padding:0;font-size:10.5pt}
+  .sheet{border:0;padding:0;max-width:none}
+  .sheet::before,.lang,.dl{display:none}
+  .titleblock{margin-inline:0;page-break-inside:avoid}
+  section,.job,.proj{page-break-inside:avoid}
+  h1{font-size:32pt}
+  a{text-decoration:none;color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<main class="sheet" id="sheet">
+  <div class="inner">
+
+    <div class="lang" role="group" aria-label="Language">
+      <button id="btnEn" aria-pressed="true">EN</button>
+      <button id="btnHe" aria-pressed="false">עברית</button>
+    </div>
+
+    <header class="hero">
+      <h1 id="name">Guy Knafo</h1>
+      <div class="role" id="role"></div>
+
+      <div class="dimwrap anim" id="dimwrap" aria-hidden="true">
+        <svg class="dim" viewBox="0 0 700 46" preserveAspectRatio="none" role="presentation">
+          <line class="tick" style="--len:26" x1="2"   y1="6" x2="2"   y2="32"/>
+          <line class="tick" style="--len:26" x1="698" y1="6" x2="698" y2="32"/>
+          <line class="span" style="--len:696" x1="2" y1="19" x2="698" y2="19"/>
+          <path d="M2 19 l9 -4 v8 z" fill="var(--accent)" stroke="none"/>
+          <path d="M698 19 l-9 -4 v8 z" fill="var(--accent)" stroke="none"/>
+        </svg>
+        <div id="dimlabel"></div>
+      </div>
+
+      <div class="meta" id="meta"></div>
+    </header>
+
+    <section>
+      <h2><span id="h-sum"></span><span class="zone">01</span></h2>
+      <p class="lede" id="summary"></p>
+    </section>
+
+    <section>
+      <h2><span id="h-rec"></span><span class="zone">02</span></h2>
+      <table class="rec">
+        <thead><tr>
+          <th id="th-val"></th><th id="th-what"></th><th id="th-how"></th>
+        </tr></thead>
+        <tbody id="records"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2><span id="h-exp"></span><span class="zone">03</span></h2>
+      <div id="jobs"></div>
+    </section>
+
+    <section>
+      <h2><span id="h-proj"></span><span class="zone">04</span></h2>
+      <div id="projects"></div>
+    </section>
+
+    <section>
+      <h2><span id="h-skl"></span><span class="zone">05</span></h2>
+      <div id="skills"></div>
+    </section>
+
+    <section>
+      <h2><span id="h-edu"></span><span class="zone">06</span></h2>
+      <div class="two">
+        <div id="education"></div>
+        <div id="service"></div>
+      </div>
+      <div class="dl" id="downloads"></div>
+    </section>
+
+  </div>
+
+  <dl class="titleblock" id="titleblock"></dl>
+</main>
+
+<script>
+const DATA = {
+  en: {
+    dir:"ltr", lang:"en",
+    name:"Guy Knafo",
+    role:"Project Manager — defense and technology hardware, requirements to serial production",
+    dim:"20 people managed · 20 projects delivered on time · 4 years on the floor",
+    meta:[
+      {t:"050-6239012", h:"tel:0506239012"},
+      {t:"knafoguy@gmail.com", h:"mailto:knafoguy@gmail.com"},
+      {t:"Klil, Israel", h:null}
+    ],
+    h:{sum:"SUMMARY", rec:"INSPECTION RECORD", exp:"EXPERIENCE", proj:"BUILT INDEPENDENTLY", skl:"CAPABILITIES", edu:"EDUCATION & SERVICE"},
+    summary:"Project manager and industrial designer. I take defense and technology products from requirements through prototyping to serial production and delivery, leading up to 20 people across engineering, procurement and the production floor. I also build the software that runs it — the project management system my company uses daily is one I designed and wrote myself.",
+    th:["RESULT","MEASURE","METHOD"],
+    records:[
+      ["−15%","Team budget","Cut without delaying delivery or compromising quality"],
+      ["+30%","Production efficiency","Streamlined processes and new technology on the floor"],
+      ["20","Projects delivered on time","A full year's slate, on schedule and above target"],
+      ["−50%","Document errors","System designed and rolled out across production stages"]
+    ],
+    jobs:[
+      {t:"Project Manager and Head of Operations and Engineering", c:"Moraltec, Kibbutz Shomrat", d:"August 2022 – Present", b:[
+        "Lead defense and technology product projects from requirements and engineering design through prototyping, serial production and customer delivery.",
+        "Manage engineering and procurement department heads and production-floor managers; coordinate R&D and manufacturing across production stages, including laser cutting and painting.",
+        "Own in-process inspections before painting and final quality inspections, maintaining records and traceability throughout production.",
+        "Maintain approved production files — design meeting records, order review requests, signed drawings, routing and inspection records, and certificates of conformity (COC).",
+        "Plan schedules, resources and costs; make technology and operational decisions with executives and clients, clarifying requirements and managing changes."
+      ]},
+      {t:"Project and Product Manager", c:"UMASQU, Tel Aviv-Yafo", d:"2016 – 2020", b:[
+        "Managed schedules, resources and product customization with international agents and clients; led and trained a team of 10 across CNC, laser cutting and 3D printing.",
+        "Defined UX/UI requirements and managed digital projects, including the company website, landing pages and marketing campaigns."
+      ]},
+      {t:"Project and Product Development Manager", c:"Freelance", d:"February 2013 – February 2022", b:[
+        "Led product development for international brands — including Apple and Google — and private clients, from research and requirements through launch planning and production."
+      ]},
+      {t:"Team Leader", c:"Security Unit, Ministry of Defense, President's Residence", d:"February 2012 – May 2016", b:[
+        "Led 20 security personnel at the President's Residence, coordinating operations and resolving issues independently in a sensitive, high-stakes environment."
+      ]}
+    ],
+    projects:[
+      {t:"Internal project management system", d:"Designed and built a system around company workflows and restricted internet access — project data, production routing cards, time tracking and delivery indicators in one place. In daily use, and the reason document errors dropped by half.", s:"Python · Streamlit · Excel"},
+      {t:"Employee leave management", d:"Defined, built and maintain a leave management app, including deployment and mobile usability.", s:"Python · Flask · PostgreSQL · Supabase · GitHub · Render"},
+      {t:"ROADAR — vehicle selection", d:"Web app for comparing pickup trucks and planning total cost of ownership in one interface.", s:"React · TypeScript"}
+    ],
+    skills:[
+      ["Project management","Matrix leadership · Schedule and resource planning · Risk management · Cost and quality oversight · Stakeholder management"],
+      ["Product development","Product requirements (PRD) · UX/UI · User and market research · Prototyping to production"],
+      ["Enterprise systems","ERP requirements and implementation support, including SAP"],
+      ["Build tools","Python, Streamlit, Flask, React, TypeScript, PostgreSQL, Supabase, GitHub, Render · AI-assisted development"],
+      ["Design and manufacturing","SolidWorks, Rhino, Illustrator, Photoshop · CNC, laser cutting, 3D printing"]
+    ],
+    eduLabel:"Education", svcLabel:"Military service",
+    education:[
+      {d:"B.A. in Industrial Design", s:"Hadassah College, Jerusalem · 2012 – 2016"},
+      {d:"Diploma in Graphic Design", s:"TAFE NM, Perth, Australia · 2009 – 2010"}
+    ],
+    service:"Full military service, Rifleman 07 — combat infantry, combat medic and squad commander.",
+    downloads:[["Download CV (PDF)","Guy_Knafo_Resume_English.pdf"],["Word version (DOCX)","Guy_Knafo_Resume_English.docx"],["גרסה בעברית","Guy_Knafo_Resume_Hebrew.pdf"]],
+    block:[["DRAWN BY","Guy Knafo"],["SHEET","CV — Project Manager"],["REV","2026-09"],["THIS PAGE","gk-ai-code.github.io/Guy-cv"]]
+  },
+
+  he: {
+    dir:"rtl", lang:"he",
+    name:"גיא כנפו",
+    role:"מנהל פרויקטים — חומרה ביטחונית וטכנולוגית, מהגדרת דרישות ועד ייצור סדרתי",
+    dim:"ניהול 20 עובדים · 20 פרויקטים במסירה בזמן · 4 שנים ברצפת הייצור",
+    meta:[
+      {t:"050-6239012", h:"tel:0506239012"},
+      {t:"knafoguy@gmail.com", h:"mailto:knafoguy@gmail.com"},
+      {t:"כליל", h:null}
+    ],
+    h:{sum:"תקציר", rec:"רשומת ביקורת", exp:"ניסיון תעסוקתי", proj:"פיתוח עצמאי", skl:"יכולות", edu:"השכלה ושירות"},
+    summary:"מנהל פרויקטים ומעצב תעשייתי. אני מוביל מוצרים ביטחוניים וטכנולוגיים מהגדרת הדרישות, דרך אבות טיפוס, ועד לייצור סדרתי ומסירה ללקוח, בניהול של עד 20 עובדים בהנדסה, ברכש וברצפת הייצור. במקביל אני גם בונה את התוכנה שמריצה את זה — מערכת ניהול הפרויקטים שהחברה עובדת איתה כל יום היא מערכת שאפיינתי וכתבתי בעצמי.",
+    th:["תוצאה","מדד","כיצד"],
+    records:[
+      ["‎−15%‎","תקציב הצוות","קיצוץ ללא פגיעה בלוחות הזמנים או באיכות"],
+      ["‎+30%‎","יעילות הייצור","ייעול תהליכים ושילוב טכנולוגיה ברצפת הייצור"],
+      ["20","פרויקטים במסירה בזמן","מלוא תכנית הפרויקטים השנתית, בזמן ומעבר ליעד"],
+      ["‎−50%‎","טעויות בתיעוד","מערכת שאופיינה והוטמעה לאורך שלבי הייצור"]
+    ],
+    jobs:[
+      {t:"מנהל פרויקטים ומנהל תפעול והנדסה", c:"Moraltec, קיבוץ שמרת", d:"אוגוסט 2022 – היום", b:[
+        "הובלת פרויקטים של מוצרים ביטחוניים וטכנולוגיים, מהגדרת הדרישות והתכנון ההנדסי, דרך אבות טיפוס וייצור סדרתי ועד למסירה ללקוח.",
+        "ניהול מנהלי מחלקות הנדסה ורכש ומנהלי רצפת הייצור; תיאום בין פיתוח לייצור והובלת שרשרת הייצור, לרבות חיתוך בלייזר וצביעה.",
+        "אחריות לביקורות בתהליך לפני צבע ולביקורות איכות סופיות, תוך מעקב ותיעוד מלא לאורך הייצור.",
+        "ניהול תיקי ייצור מאושרים — תיעוד פגישות תכן, דרישות לסקר הזמנה, שרטוטים מאושרים וחתומים, דוחות ניתוב וביקורת ותעודות התאמה (COC).",
+        "תכנון לוחות זמנים, משאבים ועלויות; קבלת החלטות טכנולוגיות ותפעוליות עם ההנהלה ועם לקוחות, תוך הבהרת דרישות וניהול שינויים."
+      ]},
+      {t:"מנהל פרויקטים ומוצר", c:"UMASQU, תל אביב-יפו", d:"2016 – 2020", b:[
+        "ניהול לוחות זמנים, משאבים והתאמת מוצרים מול סוכנים ולקוחות בינלאומיים; ניהול והכשרת צוות של 10 עובדים בטכנולוגיות CNC, חיתוך בלייזר והדפסה בתלת ממד.",
+        "אפיון דרישות UX/UI וניהול פרויקטים דיגיטליים, בהם אתר החברה, דפי נחיתה וקמפיינים שיווקיים."
+      ]},
+      {t:"מנהל פרויקטים ופיתוח מוצרים", c:"עצמאי", d:"פברואר 2013 – פברואר 2022", b:[
+        "הובלת פיתוח מוצרים עבור מותגים בינלאומיים — בהם Apple ו\u200fGoogle — ועבור לקוחות פרטיים, ממחקר וכתיבת דרישות ועד לתכנון ההשקה ולייצור."
+      ]},
+      {t:"ראש צוות", c:"יחידת האבטחה, משרד הביטחון, בית הנשיא", d:"פברואר 2012 – מאי 2016", b:[
+        "הובלת 20 אנשי אבטחה בבית הנשיא, תיאום פעילות מבצעית ופתרון בעיות באופן עצמאי בסביבה רגישה ותובענית."
+      ]}
+    ],
+    projects:[
+      {t:"מערכת פנימית לניהול פרויקטים", d:"אפיון ופיתוח מערכת המותאמת לתהליכי החברה ולמגבלות הגישה לאינטרנט — נתוני פרויקטים, כרטיסי ניתוב לייצור, מעקב שעות ומדדי אספקה במקום אחד. בשימוש יומיומי, והסיבה שטעויות התיעוד ירדו בחצי.", s:"Python · Streamlit · Excel"},
+      {t:"ניהול חופשות עובדים", d:"אפיון, פיתוח ותחזוקה של אפליקציה לניהול חופשות, כולל פריסה ונוחות שימוש בנייד.", s:"Python · Flask · PostgreSQL · Supabase · GitHub · Render"},
+      {t:"ROADAR — כלי לבחירת רכב", d:"אפליקציית אינטרנט להשוואת טנדרים ולתכנון עלות בעלות ואחזקה בממשק אחד.", s:"React · TypeScript"}
+    ],
+    skills:[
+      ["ניהול פרויקטים","הובלה מטריציונית · תכנון לוחות זמנים ומשאבים · ניהול סיכונים · בקרת עלויות ואיכות · ניהול בעלי עניין"],
+      ["פיתוח מוצרים","אפיון דרישות מוצר (PRD) · UX/UI · מחקר משתמשים ושוק · אבות טיפוס והעברה לייצור"],
+      ["מערכות ארגוניות","אפיון דרישות וסיוע בהטמעת מערכות ERP, לרבות SAP"],
+      ["כלי פיתוח","Python, Streamlit, Flask, React, TypeScript, PostgreSQL, Supabase, GitHub, Render · פיתוח בסיוע בינה מלאכותית"],
+      ["עיצוב וייצור","SolidWorks, Rhino, Illustrator, Photoshop · עיבוד CNC, חיתוך בלייזר והדפסה בתלת ממד"]
+    ],
+    eduLabel:"השכלה", svcLabel:"שירות צבאי",
+    education:[
+      {d:"תואר ראשון בעיצוב תעשייתי", s:"המכללה האקדמית הדסה, ירושלים · 2012 – 2016"},
+      {d:"דיפלומה בעיצוב גרפי", s:"TAFE NM, פרת׳, אוסטרליה · 2009 – 2010"}
+    ],
+    service:"שירות צבאי מלא, רובאי 07 — לוחם חי״ר, חובש קרבי ומפקד כיתה.",
+    downloads:[["הורדת קורות חיים (PDF)","Guy_Knafo_Resume_Hebrew.pdf"],["גרסת Word (DOCX)","Guy_Knafo_Resume_Hebrew.docx"],["English version","Guy_Knafo_Resume_English.pdf"]],
+    block:[["שורטט ע״י","גיא כנפו"],["גיליון","קורות חיים — מנהל פרויקטים"],["מהדורה","2026-09"],["הדף הזה","gk-ai-code.github.io/Guy-cv"]]
+  }
+};
+
+const $ = id => document.getElementById(id);
+
+function render(k){
+  const d = DATA[k];
+  document.documentElement.lang = d.lang;
+  document.documentElement.dir  = d.dir;
+  document.title = d.name + " — " + (k==="he" ? "מנהל פרויקטים" : "Project Manager");
+
+  $("name").textContent = d.name;
+  $("role").textContent = d.role;
+  $("dimlabel").textContent = d.dim;
+
+  $("meta").innerHTML = d.meta.map(m =>
+    m.h ? `<a href="${m.h}">${m.t}</a>` : `<span>${m.t}</span>`).join("");
+
+  $("h-sum").textContent  = d.h.sum;
+  $("h-rec").textContent  = d.h.rec;
+  $("h-exp").textContent  = d.h.exp;
+  $("h-proj").textContent = d.h.proj;
+  $("h-skl").textContent  = d.h.skl;
+  $("h-edu").textContent  = d.h.edu;
+
+  $("summary").textContent = d.summary;
+
+  $("th-val").textContent  = d.th[0];
+  $("th-what").textContent = d.th[1];
+  $("th-how").textContent  = d.th[2];
+  $("records").innerHTML = d.records.map(r =>
+    `<tr><td class="val">${r[0]}</td><td class="what">${r[1]}</td><td class="how">${r[2]}</td></tr>`).join("");
+
+  $("jobs").innerHTML = d.jobs.map(j => `
+    <div class="job">
+      <h3>${j.t}</h3>
+      <div class="at"><b>${j.c}</b> &nbsp;·&nbsp; ${j.d}</div>
+      <ul>${j.b.map(b=>`<li>${b}</li>`).join("")}</ul>
+    </div>`).join("");
+
+  $("projects").innerHTML = d.projects.map(p => `
+    <div class="proj">
+      <h3>${p.t}</h3>
+      <p>${p.d}</p>
+      <div class="stack">${p.s}</div>
+    </div>`).join("");
+
+  $("skills").innerHTML = d.skills.map(s => `
+    <div class="ed"><b>${s[0]}</b><span>${s[1]}</span></div>`).join("");
+
+  $("education").innerHTML =
+    `<div class="ed"><b>${d.eduLabel}</b></div>` +
+    d.education.map(e=>`<div class="ed"><b>${e.d}</b><span>${e.s}</span></div>`).join("");
+  $("service").innerHTML =
+    `<div class="ed"><b>${d.svcLabel}</b><span>${d.service}</span></div>`;
+
+  $("downloads").innerHTML = d.downloads.map(x =>
+    `<a href="${x[1]}" download>${x[0]}</a>`).join("");
+
+  $("titleblock").innerHTML = d.block.map(b => {
+    let val = b[1];
+    if (val.includes("@")) val = `<a href="mailto:${val}">${val}</a>`;
+    else if (val.includes("github.io")) val = `<a href="https://${val}/" target="_blank" rel="noopener">${val}</a>`;
+    return `<div><dt>${b[0]}</dt><dd>${val}</dd></div>`;
+  }).join("");
+
+  $("btnEn").setAttribute("aria-pressed", k==="en");
+  $("btnHe").setAttribute("aria-pressed", k==="he");
+  try{ localStorage.setItem("cvlang", k); }catch(e){}
+}
+
+$("btnEn").addEventListener("click", ()=>render("en"));
+$("btnHe").addEventListener("click", ()=>render("he"));
+
+let start = "en";
+try{
+  const saved = localStorage.getItem("cvlang");
+  if(saved) start = saved;
+  else if((navigator.language||"").toLowerCase().startsWith("he")) start = "he";
+}catch(e){}
+render(start);
+
+// the dimension line draws once, on load, then stops
+window.addEventListener("load", ()=>{
+  setTimeout(()=>$("dimwrap").classList.remove("anim"), 2200);
+});
+</script>
+</body>
+</html>
